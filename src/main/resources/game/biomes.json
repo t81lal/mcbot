@@ -1,0 +1,282 @@
+[
+  {
+    "id": 0,
+    "colour": 112,
+    "name": "Ocean",
+    "rainfall": 0.5,
+    "temperature": 0.5
+  },
+  {
+    "id": 1,
+    "colour": 9286496,
+    "name": "Plains",
+    "rainfall": 0.4,
+    "temperature": 0.8
+  },
+  {
+    "id": 2,
+    "colour": 16421912,
+    "name": "Desert",
+    "rainfall": 0,
+    "temperature": 2
+  },
+  {
+    "id": 3,
+    "colour": 6316128,
+    "name": "Extreme Hills",
+    "rainfall": 0.3,
+    "temperature": 0.2
+  },
+  {
+    "id": 4,
+    "colour": 353825,
+    "name": "Forest",
+    "rainfall": 0.8,
+    "temperature": 0.7
+  },
+  {
+    "id": 5,
+    "colour": 747097,
+    "name": "Taiga",
+    "rainfall": 0.8,
+    "temperature": 0.05
+  },
+  {
+    "id": 6,
+    "colour": 522674,
+    "name": "Swampland",
+    "rainfall": 0.9,
+    "temperature": 0.8
+  },
+  {
+    "id": 7,
+    "colour": 255,
+    "name": "River",
+    "rainfall": 0.5,
+    "temperature": 0.5
+  },
+  {
+    "id": 8,
+    "colour": 16711680,
+    "name": "Hell",
+    "rainfall": 0,
+    "temperature": 2
+  },
+  {
+    "id": 9,
+    "colour": 8421631,
+    "name": "The End",
+    "rainfall": 0.5,
+    "temperature": 0.5
+  },
+  {
+    "id": 10,
+    "colour": 9474208,
+    "name": "FrozenOcean",
+    "rainfall": 0.5,
+    "temperature": 0
+  },
+  {
+    "id": 11,
+    "colour": 10526975,
+    "name": "FrozenRiver",
+    "rainfall": 0.5,
+    "temperature": 0
+  },
+  {
+    "id": 12,
+    "colour": 16777215,
+    "name": "Ice Plains",
+    "rainfall": 0.5,
+    "temperature": 0
+  },
+  {
+    "id": 13,
+    "colour": 10526880,
+    "name": "Ice Mountains",
+    "rainfall": 0.5,
+    "temperature": 0
+  },
+  {
+    "id": 14,
+    "colour": 16711935,
+    "name": "MushroomIsland",
+    "rainfall": 1,
+    "temperature": 0.9
+  },
+  {
+    "id": 15,
+    "colour": 10486015,
+    "name": "MushroomIslandShore",
+    "rainfall": 1,
+    "temperature": 0.9
+  },
+  {
+    "id": 16,
+    "colour": 16440917,
+    "name": "Beach",
+    "rainfall": 0.4,
+    "temperature": 0.8
+  },
+  {
+    "id": 17,
+    "colour": 13786898,
+    "name": "DesertHills",
+    "rainfall": 0,
+    "temperature": 2
+  },
+  {
+    "id": 18,
+    "colour": 2250012,
+    "name": "ForestHills",
+    "rainfall": 0.8,
+    "temperature": 0.7
+  },
+  {
+    "id": 19,
+    "colour": 1456435,
+    "name": "TaigaHills",
+    "rainfall": 0.7,
+    "temperature": 0.2
+  },
+  {
+    "id": 20,
+    "colour": 7501978,
+    "name": "Extreme Hills Edge",
+    "rainfall": 0.3,
+    "temperature": 0.2
+  },
+  {
+    "id": 21,
+    "colour": 5470985,
+    "name": "Jungle",
+    "rainfall": 0.9,
+    "temperature": 1.2
+  },
+  {
+    "id": 22,
+    "colour": 2900485,
+    "name": "JungleHills",
+    "rainfall": 0.9,
+    "temperature": 1.2
+  },
+  {
+    "id": 23,
+    "colour": 6458135,
+    "name": "JungleEdge",
+    "rainfall": 0.8,
+    "temperature": 0.95
+  },
+  {
+    "id": 24,
+    "colour": 48,
+    "name": "Deep Ocean",
+    "rainfall": 0.5,
+    "temperature": 0.5
+  },
+  {
+    "id": 25,
+    "colour": 10658436,
+    "name": "Stone Beach",
+    "rainfall": 0.3,
+    "temperature": 0.2
+  },
+  {
+    "id": 26,
+    "colour": 16445632,
+    "name": "Cold Beach",
+    "rainfall": 0.3,
+    "temperature": 0.05
+  },
+  {
+    "id": 27,
+    "colour": 3175492,
+    "name": "Birch Forest",
+    "rainfall": 0.6,
+    "temperature": 0.6
+  },
+  {
+    "id": 28,
+    "colour": 2055986,
+    "name": "Birch Forest Hills",
+    "rainfall": 0.6,
+    "temperature": 0.6
+  },
+  {
+    "id": 29,
+    "colour": 4215066,
+    "name": "Roofed Forest",
+    "rainfall": 0.8,
+    "temperature": 0.7
+  },
+  {
+    "id": 30,
+    "colour": 3233098,
+    "name": "Cold Taiga",
+    "rainfall": 0.4,
+    "temperature": -0.5
+  },
+  {
+    "id": 31,
+    "colour": 2375478,
+    "name": "Cold Taiga Hills",
+    "rainfall": 0.4,
+    "temperature": -0.5
+  },
+  {
+    "id": 32,
+    "colour": 5858897,
+    "name": "Mega Taiga",
+    "rainfall": 0.8,
+    "temperature": 0.3
+  },
+  {
+    "id": 33,
+    "colour": 4542270,
+    "name": "Mega Taiga Hills",
+    "rainfall": 0.8,
+    "temperature": 0.3
+  },
+  {
+    "id": 34,
+    "colour": 5271632,
+    "name": "Extreme Hills+",
+    "rainfall": 0.3,
+    "temperature": 0.2
+  },
+  {
+    "id": 35,
+    "colour": 12431967,
+    "name": "Savanna",
+    "rainfall": 0,
+    "temperature": 1.2
+  },
+  {
+    "id": 36,
+    "colour": 10984804,
+    "name": "Savanna Plateau",
+    "rainfall": 0,
+    "temperature": 1
+  },
+  {
+    "id": 37,
+    "colour": 14238997,
+    "name": "Mesa",
+    "rainfall": 0.5,
+    "temperature": 2.0
+  },
+  {
+    "id": 38,
+    "colour": 11573093,
+    "name": "Mesa Plateau F",
+    "rainfall": 0.5,
+    "temperature": 2.0
+  },
+  {
+    "id": 39,
+    "colour": 13274213,
+    "name": "Redwood Taiga Hills M",
+    "rainfall": 0.5,
+    "temperature": 2.0
+  }
+]
