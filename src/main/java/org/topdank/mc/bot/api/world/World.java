@@ -3,14 +3,14 @@ package org.topdank.mc.bot.api.world;
 import java.util.Collection;
 import java.util.Set;
 
+import org.topdank.mc.bot.api.entity.Entity;
 import org.topdank.mc.bot.api.world.chunk.Chunk;
 import org.topdank.mc.bot.api.world.pos.BlockLocation;
 import org.topdank.mc.bot.api.world.pos.BoundingBox;
 import org.topdank.mc.bot.api.world.pos.ChunkLocation;
 import org.topdank.mc.bot.api.world.settings.WorldSettings;
-import org.topdank.mc.bot.impl.entity.Entity;
-import org.topdank.mc.bot.impl.entity.impl.living.player.LocalPlayer;
-import org.topdank.mc.bot.impl.entity.impl.living.player.PlayerEntity;
+import org.topdank.mc.bot.impl.entity.living.player.LocalPlayer;
+import org.topdank.mc.bot.impl.entity.living.player.PlayerEntity;
 import org.topdank.mc.bot.impl.entity.tile.TileEntity;
 
 public interface World {

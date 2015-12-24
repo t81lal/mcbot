@@ -1,7 +1,7 @@
 package org.topdank.mc.bot.impl.event.spawn;
 
 import org.topdank.bot.eventbus.Event;
-import org.topdank.mc.bot.impl.entity.impl.living.player.PlayerEntity;
+import org.topdank.mc.bot.impl.entity.living.player.PlayerEntity;
 
 public class PlayerSpawnEvent implements Event {
 
