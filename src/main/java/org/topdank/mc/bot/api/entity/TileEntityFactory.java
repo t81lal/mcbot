@@ -1,8 +1,8 @@
 package org.topdank.mc.bot.api.entity;
 
 import org.topdank.mc.bot.api.BotContext;
-import org.topdank.mc.bot.api.entity.tile.TileEntity;
 import org.topdank.mc.bot.api.nbt.tag.builtin.CompoundTag;
+import org.topdank.mc.bot.impl.entity.tile.TileEntity;
 
 public class TileEntityFactory {
 

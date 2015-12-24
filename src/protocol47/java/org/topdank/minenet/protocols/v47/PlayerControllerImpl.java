@@ -1,7 +1,7 @@
 package org.topdank.minenet.protocols.v47;
 
 import org.topdank.mc.bot.api.BotContext;
-import org.topdank.mc.bot.api.entity.living.player.PlayerController;
+import org.topdank.mc.bot.impl.entity.impl.living.player.PlayerController;
 
 public class PlayerControllerImpl extends PlayerController {
 

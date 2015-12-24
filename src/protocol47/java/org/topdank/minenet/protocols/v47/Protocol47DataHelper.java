@@ -24,6 +24,7 @@ import org.topdank.mc.bot.api.world.chunk.ParsedChunkData;
 import org.topdank.mc.bot.api.world.chunk.ShortArray3d;
 import org.topdank.mc.bot.api.world.pos.BlockLocation;
 import org.topdank.mc.bot.api.world.pos.ChunkLocation;
+import org.topdank.mc.bot.api.world.pos.Rotation;
 import org.topdank.mc.bot.util.MathHelper;
 
 public class Protocol47DataHelper {
@@ -184,7 +185,8 @@ public class Protocol47DataHelper {
 					value = new BlockLocation(in.readInt(), in.readInt(), in.readInt());
 					break;
 				case 7:
-					value = new float[] { in.readFloat(), in.readFloat(), in.readFloat() };
+					value = new Rotation(in.readFloat(), in.readFloat(), in.readFloat());
+					// value = new float[] { in.readFloat(), in.readFloat(), in.readFloat() };
 					break;
 				default:
 					throw new IOException("Unknown metadata type id: " + typeId);

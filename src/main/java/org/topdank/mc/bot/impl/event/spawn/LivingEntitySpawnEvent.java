@@ -1,17 +1,17 @@
 package org.topdank.mc.bot.impl.event.spawn;
 
 import org.topdank.bot.eventbus.Event;
-import org.topdank.mc.bot.api.entity.living.LivingEntity;
+import org.topdank.mc.bot.impl.entity.Entity;
 
 public class LivingEntitySpawnEvent implements Event {
 
-	private LivingEntity livingEntity;
+	private Entity livingEntity;
 
-	public LivingEntitySpawnEvent(LivingEntity livingEntity) {
+	public LivingEntitySpawnEvent(Entity livingEntity) {
 		this.livingEntity = livingEntity;
 	}
 
-	public LivingEntity getObjectEntity() {
+	public Entity getObjectEntity() {
 		return livingEntity;
 	}
 }

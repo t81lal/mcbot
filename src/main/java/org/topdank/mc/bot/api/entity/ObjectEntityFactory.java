@@ -1,38 +1,38 @@
 package org.topdank.mc.bot.api.entity;
 
 import org.topdank.mc.bot.api.BotContext;
-import org.topdank.mc.bot.api.entity.living.LivingEntity;
-import org.topdank.mc.bot.api.entity.living.player.PlayerEntity;
-import org.topdank.mc.bot.api.entity.object.ItemEntity;
-import org.topdank.mc.bot.api.entity.object.ObjectEntity;
-import org.topdank.mc.bot.api.entity.object.item.EnderCrystalEntity;
-import org.topdank.mc.bot.api.entity.object.item.FallingBlockEntity;
-import org.topdank.mc.bot.api.entity.object.item.ItemFrameEntity;
-import org.topdank.mc.bot.api.entity.object.item.LeashKnotEntity;
-import org.topdank.mc.bot.api.entity.object.item.PrimedTNTEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.ArrowEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.EggEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.EnderEyeEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.FireworkEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.LargeFireBallEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.SmallFireBallEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.WitherSkullEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.thrown.EnderpearlEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.thrown.ExpBottleEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.thrown.FishingBobEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.thrown.PotionEntity;
-import org.topdank.mc.bot.api.entity.object.projectile.thrown.SnowBallEntity;
-import org.topdank.mc.bot.api.entity.object.vehicle.BoatEntity;
-import org.topdank.mc.bot.api.entity.object.vehicle.CommandBlockMinecart;
-import org.topdank.mc.bot.api.entity.object.vehicle.FurnaceMinecart;
-import org.topdank.mc.bot.api.entity.object.vehicle.MinecartEntity;
-import org.topdank.mc.bot.api.entity.object.vehicle.MinecartEntity.MinecartType;
-import org.topdank.mc.bot.api.entity.object.vehicle.TNTMinecartEntity;
+import org.topdank.mc.bot.impl.entity.Entity;
+import org.topdank.mc.bot.impl.entity.impl.ArrowEntity;
+import org.topdank.mc.bot.impl.entity.impl.BoatEntity;
+import org.topdank.mc.bot.impl.entity.impl.EnderCrystalEntity;
+import org.topdank.mc.bot.impl.entity.impl.EnderEyeEntity;
+import org.topdank.mc.bot.impl.entity.impl.FallingBlockEntity;
+import org.topdank.mc.bot.impl.entity.impl.FireworkEntity;
+import org.topdank.mc.bot.impl.entity.impl.FishingBobEntity;
+import org.topdank.mc.bot.impl.entity.impl.ItemEntity;
+import org.topdank.mc.bot.impl.entity.impl.PrimedTNTEntity;
+import org.topdank.mc.bot.impl.entity.impl.fireball.LargeFireBallEntity;
+import org.topdank.mc.bot.impl.entity.impl.fireball.SmallFireBallEntity;
+import org.topdank.mc.bot.impl.entity.impl.fireball.WitherSkullEntity;
+import org.topdank.mc.bot.impl.entity.impl.hanging.ItemFrameEntity;
+import org.topdank.mc.bot.impl.entity.impl.hanging.LeashKnotEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.LivingEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.player.PlayerEntity;
+import org.topdank.mc.bot.impl.entity.impl.minecart.CommandBlockMinecart;
+import org.topdank.mc.bot.impl.entity.impl.minecart.FurnaceMinecart;
+import org.topdank.mc.bot.impl.entity.impl.minecart.MinecartEntity;
+import org.topdank.mc.bot.impl.entity.impl.minecart.TNTMinecartEntity;
+import org.topdank.mc.bot.impl.entity.impl.minecart.MinecartEntity.MinecartType;
+import org.topdank.mc.bot.impl.entity.impl.projectile.EggEntity;
+import org.topdank.mc.bot.impl.entity.impl.projectile.EnderpearlEntity;
+import org.topdank.mc.bot.impl.entity.impl.projectile.ExpBottleEntity;
+import org.topdank.mc.bot.impl.entity.impl.projectile.PotionEntity;
+import org.topdank.mc.bot.impl.entity.impl.projectile.SnowBallEntity;
 
 public class ObjectEntityFactory {
 
-	public ObjectEntity create(BotContext cxt, int type, int id, int data, double x, double y, double z, float pitch, float yaw, double motx, double moty, double motz) {
-		ObjectEntity entity = null;
+	public Entity create(BotContext cxt, int type, int id, int data, double x, double y, double z, float pitch, float yaw, double motx, double moty, double motz) {
+		Entity entity = null;
 		
 		switch (type) {
 			case 10: {

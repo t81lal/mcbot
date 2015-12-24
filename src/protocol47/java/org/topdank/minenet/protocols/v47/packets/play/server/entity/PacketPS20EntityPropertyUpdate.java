@@ -7,7 +7,7 @@ import java.util.UUID;
 
 import org.topdank.bot.net.io.ReadableInput;
 import org.topdank.bot.net.packet.IdentifiableReadablePacket;
-import org.topdank.mc.bot.api.entity.Entity.EntityProperty;
+import org.topdank.mc.bot.impl.entity.Entity.EntityProperty;
 
 public class PacketPS20EntityPropertyUpdate implements IdentifiableReadablePacket {
 

@@ -1,8 +1,8 @@
 package org.topdank.mc.bot.api.item.inventory;
 
 import org.topdank.mc.bot.api.BotContext;
-import org.topdank.mc.bot.api.entity.living.player.LocalPlayer;
 import org.topdank.mc.bot.api.item.ItemStack;
+import org.topdank.mc.bot.impl.entity.impl.living.player.LocalPlayer;
 
 public class PlayerInventory implements Inventory {
 

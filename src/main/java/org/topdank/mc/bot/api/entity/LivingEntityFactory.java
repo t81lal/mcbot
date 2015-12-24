@@ -1,44 +1,44 @@
 package org.topdank.mc.bot.api.entity;
 
 import org.topdank.mc.bot.api.BotContext;
-import org.topdank.mc.bot.api.entity.living.ArmourStandEntity;
-import org.topdank.mc.bot.api.entity.living.LivingEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.BatEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.ChickenEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.CowEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.HorseEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.MushroomCowEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.PigEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.RabbitEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.SheepEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.SnowManEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.SquidEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.VillagerEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.tameable.OcelotEntity;
-import org.topdank.mc.bot.api.entity.living.ageable.tameable.WolfEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.BlazeEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.CaveSpiderEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.CreeperEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.EnderDragonEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.EndermanEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.EndermiteEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.GhastEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.GiantZombieEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.GuardianEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.IronGolemEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.MagmaCubeEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.SilverFishEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.SkeletonEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.SlimeEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.SpiderEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.WitchEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.WitherEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.ZombieEntity;
-import org.topdank.mc.bot.api.entity.living.monsters.ZombiePigmanEntity;
+import org.topdank.mc.bot.impl.entity.Entity;
+import org.topdank.mc.bot.impl.entity.impl.living.ArmourStandEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.BatEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.VillagerEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.ChickenEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.CowEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.HorseEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.MushroomCowEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.PigEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.RabbitEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.SheepEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.tameable.OcelotEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.ageable.animal.tameable.WolfEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.golem.IronGolemEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.golem.SnowManEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.BlazeEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.CaveSpiderEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.CreeperEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.EnderDragonEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.EndermanEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.EndermiteEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.GhastEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.GiantZombieEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.GuardianEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.MagmaCubeEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.SilverFishEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.SkeletonEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.SlimeEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.SpiderEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.SquidEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.WitchEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.WitherEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.ZombieEntity;
+import org.topdank.mc.bot.impl.entity.impl.living.creature.mob.ZombiePigmanEntity;
 
 public class LivingEntityFactory {
 
-	public LivingEntity create(BotContext cxt, int type, int id) throws IllegalArgumentException {
+	public Entity create(BotContext cxt, int type, int id) throws IllegalArgumentException {
 		switch (type) {
 			case 30:
 				return new ArmourStandEntity(cxt.getWorld(), id);
