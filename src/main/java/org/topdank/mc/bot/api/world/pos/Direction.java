@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
 
-import org.topdank.mc.bot.util.MathHelper;
+import org.topdank.mc.util.MathHelper;
 
 public enum Direction {
 	DOWN(0, 1, -1, "down", AxisDirection.NEGATIVE, Axis.Y, new BlockLocation(0, -1, 0)), 

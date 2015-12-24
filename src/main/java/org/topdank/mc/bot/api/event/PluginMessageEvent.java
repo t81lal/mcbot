@@ -1,4 +1,4 @@
-package org.topdank.mc.bot.impl.event;
+package org.topdank.mc.bot.api.event;
 
 import org.topdank.bot.eventbus.EventCancellable;
 

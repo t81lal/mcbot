@@ -1,4 +1,4 @@
-package org.topdank.mc.bot.impl.event.internal.world;
+package org.topdank.mc.bot.api.event.internal.world;
 
 import org.topdank.bot.eventbus.Event;
 import org.topdank.mc.bot.api.world.chunk.Chunk;

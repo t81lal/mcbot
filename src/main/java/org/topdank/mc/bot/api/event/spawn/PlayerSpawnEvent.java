@@ -1,4 +1,4 @@
-package org.topdank.mc.bot.impl.event.spawn;
+package org.topdank.mc.bot.api.event.spawn;
 
 import org.topdank.bot.eventbus.Event;
 import org.topdank.mc.bot.impl.entity.living.player.PlayerEntity;

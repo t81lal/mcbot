@@ -7,6 +7,7 @@ import java.util.Set;
 import org.topdank.bot.eventbus.EventBus;
 import org.topdank.mc.bot.api.BotContext;
 import org.topdank.mc.bot.api.entity.Entity;
+import org.topdank.mc.bot.api.event.internal.player.RequestRespawnEvent;
 import org.topdank.mc.bot.api.item.ItemStack;
 import org.topdank.mc.bot.api.item.inventory.Inventory;
 import org.topdank.mc.bot.api.item.inventory.PlayerInventory;
@@ -17,8 +18,7 @@ import org.topdank.mc.bot.api.world.BlockId;
 import org.topdank.mc.bot.api.world.pos.BlockLocation;
 import org.topdank.mc.bot.api.world.pos.BoundingBox;
 import org.topdank.mc.bot.api.world.pos.PreciseLocation;
-import org.topdank.mc.bot.impl.event.internal.player.RequestRespawnEvent;
-import org.topdank.mc.bot.util.MathHelper;
+import org.topdank.mc.util.MathHelper;
 
 public class LocalPlayer extends PlayerEntity {
 

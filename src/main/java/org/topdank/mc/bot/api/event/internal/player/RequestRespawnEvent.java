@@ -1,4 +1,4 @@
-package org.topdank.mc.bot.impl.event.internal.player;
+package org.topdank.mc.bot.api.event.internal.player;
 
 import org.topdank.bot.eventbus.Event;
 

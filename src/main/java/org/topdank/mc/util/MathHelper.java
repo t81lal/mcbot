@@ -1,4 +1,4 @@
-package org.topdank.mc.bot.util;
+package org.topdank.mc.util;
 
 import java.util.Random;
 import java.util.UUID;

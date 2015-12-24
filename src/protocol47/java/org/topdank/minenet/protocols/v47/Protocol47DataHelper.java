@@ -25,7 +25,7 @@ import org.topdank.mc.bot.api.world.chunk.ShortArray3d;
 import org.topdank.mc.bot.api.world.pos.BlockLocation;
 import org.topdank.mc.bot.api.world.pos.ChunkLocation;
 import org.topdank.mc.bot.api.world.pos.Rotation;
-import org.topdank.mc.bot.util.MathHelper;
+import org.topdank.mc.util.MathHelper;
 
 public class Protocol47DataHelper {
 

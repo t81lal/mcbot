@@ -1,4 +1,4 @@
-package org.topdank.mc.bot.impl.event.player;
+package org.topdank.mc.bot.api.event.player;
 
 import java.awt.Dimension;
 

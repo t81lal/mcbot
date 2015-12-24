@@ -9,6 +9,11 @@ import org.topdank.bot.eventbus.EventPriority;
 import org.topdank.bot.eventbus.EventTarget;
 import org.topdank.mc.bot.api.BotContext;
 import org.topdank.mc.bot.api.entity.Entity;
+import org.topdank.mc.bot.api.event.internal.world.InternalBlockChangeEvent;
+import org.topdank.mc.bot.api.event.internal.world.InternalChunkLoadEvent;
+import org.topdank.mc.bot.api.event.internal.world.InternalMultiBlockChangeEvent;
+import org.topdank.mc.bot.api.event.internal.world.InternalMultiChunkLoadEvent;
+import org.topdank.mc.bot.api.event.world.TimeUpdateEvent;
 import org.topdank.mc.bot.api.world.Block;
 import org.topdank.mc.bot.api.world.BlockData;
 import org.topdank.mc.bot.api.world.BlockId;
@@ -22,11 +27,6 @@ import org.topdank.mc.bot.api.world.settings.WorldSettings;
 import org.topdank.mc.bot.impl.entity.living.player.LocalPlayer;
 import org.topdank.mc.bot.impl.entity.living.player.PlayerEntity;
 import org.topdank.mc.bot.impl.entity.tile.TileEntity;
-import org.topdank.mc.bot.impl.event.internal.world.InternalBlockChangeEvent;
-import org.topdank.mc.bot.impl.event.internal.world.InternalChunkLoadEvent;
-import org.topdank.mc.bot.impl.event.internal.world.InternalMultiBlockChangeEvent;
-import org.topdank.mc.bot.impl.event.internal.world.InternalMultiChunkLoadEvent;
-import org.topdank.mc.bot.impl.event.world.TimeUpdateEvent;
 
 public class DefaultMinecraftWorld implements World {
 

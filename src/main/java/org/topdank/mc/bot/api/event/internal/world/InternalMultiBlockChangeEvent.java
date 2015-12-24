@@ -1,4 +1,4 @@
-package org.topdank.mc.bot.impl.event.internal.world;
+package org.topdank.mc.bot.api.event.internal.world;
 
 public class InternalMultiBlockChangeEvent {
 

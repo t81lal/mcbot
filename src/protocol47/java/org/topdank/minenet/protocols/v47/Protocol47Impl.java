@@ -34,6 +34,10 @@ import org.topdank.mc.bot.api.entity.EntityFactoryProvider;
 import org.topdank.mc.bot.api.entity.LivingEntityFactory;
 import org.topdank.mc.bot.api.entity.ObjectEntityFactory;
 import org.topdank.mc.bot.api.entity.TileEntityFactory;
+import org.topdank.mc.bot.api.event.spawn.LivingEntitySpawnEvent;
+import org.topdank.mc.bot.api.event.spawn.ObjectEntitySpawnEvent;
+import org.topdank.mc.bot.api.event.spawn.PlayerSpawnEvent;
+import org.topdank.mc.bot.api.event.world.TimeUpdateEvent;
 import org.topdank.mc.bot.api.item.BasicItemStack;
 import org.topdank.mc.bot.api.message.TextMessage;
 import org.topdank.mc.bot.api.world.World;
@@ -43,11 +47,6 @@ import org.topdank.mc.bot.impl.entity.ItemEntity;
 import org.topdank.mc.bot.impl.entity.living.LivingEntity;
 import org.topdank.mc.bot.impl.entity.living.player.LocalPlayer;
 import org.topdank.mc.bot.impl.entity.living.player.PlayerEntity;
-import org.topdank.mc.bot.impl.entity.object.ObjectEntity;
-import org.topdank.mc.bot.impl.event.spawn.LivingEntitySpawnEvent;
-import org.topdank.mc.bot.impl.event.spawn.ObjectEntitySpawnEvent;
-import org.topdank.mc.bot.impl.event.spawn.PlayerSpawnEvent;
-import org.topdank.mc.bot.impl.event.world.TimeUpdateEvent;
 import org.topdank.minenet.protocols.v47.packets.handshake.client.PacketHC00Handshake;
 import org.topdank.minenet.protocols.v47.packets.login.client.PacketLC00LoginStart;
 import org.topdank.minenet.protocols.v47.packets.login.client.PacketLC01EncryptionResponse;
@@ -573,7 +572,7 @@ public class Protocol47Impl extends MCProtocol {
 					case 0x0E: { // PacketPS0ESpawnObject
 						PacketPS0ESpawnObject pso = (PacketPS0ESpawnObject) p;
 						
-						ObjectEntity objectEntity = context.getEntityProvider().getObjectEntityFactory().create(context, pso.getTypeId(), pso.getEntityId(), pso.getData(), pso.getX(), pso.getY(), pso.getZ(), pso.getPitch(), pso.getYaw(), pso.getMotX(), pso.getMotY(), pso.getMotZ());
+						Entity objectEntity = context.getEntityProvider().getObjectEntityFactory().create(context, pso.getTypeId(), pso.getEntityId(), pso.getData(), pso.getX(), pso.getY(), pso.getZ(), pso.getPitch(), pso.getYaw(), pso.getMotX(), pso.getMotY(), pso.getMotZ());
 						System.out.println("Spawned: " + objectEntity);
 						
 						context.getWorld().spawnEntity(objectEntity);
@@ -585,7 +584,7 @@ public class Protocol47Impl extends MCProtocol {
 						PacketPS0FSpawnMob psm = (PacketPS0FSpawnMob) p;
 						// System.out.println(psm);
 						
-						LivingEntity livingEntity = context.getEntityProvider().getLivingEntityFactory().create(context, psm.getTypeId(), psm.getEntityId());
+						Entity livingEntity = context.getEntityProvider().getLivingEntityFactory().create(context, psm.getTypeId(), psm.getEntityId());
 						livingEntity.setLocation(psm.getX(), psm.getY(), psm.getZ());
 						livingEntity.setPitch(psm.getPitch());
 						livingEntity.setYaw(psm.getYaw());
